@@ -1,0 +1,45 @@
+.rangeslider,
+.rangeslider__fill {
+  background: var(--rangeslider-fill-color);
+  display: block;
+  height: var(--rangeslider-height);
+  width: 100%;
+}
+.rangeslider {
+  position: relative;
+    -webkit-border-radius: var(--rangeslider-border-radius);
+  -moz-border-radius: var(--rangeslider-border-radius);
+  -ms-border-radius: var(--rangeslider-border-radius);
+  -o-border-radius: var(--rangeslider-border-radius);
+  border-radius: var(--rangeslider-border-radius);
+  overflow: hidden;
+}
+.rangeslider--disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+.rangeslider__fill {
+  background: var(--rangeslider-handle-color);
+  position: absolute;
+  top: 0;
+}
+.rangeslider__handle {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  width: var(--rangeslider-handle-width);
+  height: var(--rangeslider-height);
+  position: absolute;
+  top: 0;
+  background: linear-gradient(270deg, var(--rangeslider-handle-color-highlight), var(--rangeslider-handle-color));
+  -webkit-border-radius: var(--rangeslider-border-radius);
+  -moz-border-radius: var(--rangeslider-border-radius);
+  -ms-border-radius: var(--rangeslider-border-radius);
+  -o-border-radius: var(--rangeslider-border-radius);
+  border-radius: var(--rangeslider-border-radius);
+}
+input[type="range"]:focus + .rangeslider .rangeslider__handle {
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  -moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}

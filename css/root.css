@@ -1,0 +1,10 @@
+:root {
+    /* 滑动条设置 */
+    --rangeslider-border-radius: 10px; /* 滑动条圆角 */
+    --rangeslider-height: 15px; /* 滑动条高度 */
+    --rangeslider-handle-width:15px; /* 滑动条把手宽度 */
+    --rangeslider-handle-color-highlight:#e943ff 0%; /* 滑动条把手高亮色 */
+    --rangeslider-handle-color:#A443FF 100%; /* 滑动条已划过 */
+    --rangeslider-fill-color:#e6e6e6; /* 滑动条背景颜色 */
+  }
+  
