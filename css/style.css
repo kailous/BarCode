@@ -9,6 +9,20 @@ body{
   margin: 0;
   padding: 0;
 }
+#title {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-end;
+}
+.logo {
+  height: 48px;
+  color:#A443FF;
+}
+#title p {
+  text-align: left;
+  line-height: 100%;
+}
 .container {
   display: flex;
     flex-direction: column;
